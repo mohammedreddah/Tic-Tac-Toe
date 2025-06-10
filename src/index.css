@@ -1,0 +1,102 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center ;
+  gap: 30%;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  margin: 10px;
+  font-size: 4em ;
+  text-align: center;
+}
+
+.players{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around ;
+}
+
+.area{
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(3, 90px);
+  background-color: aliceblue;
+}
+
+.field{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background-color: #242424;
+}
+
+.img{
+  width: 50%;
+  height: 50%;
+}
+
+.players > h3{
+  transition: transform 0.3s ease-in-out;
+}
+
+.turn{
+  transform: scale(1.9);
+}
+
+.p1{
+  color: #008000;
+}
+
+.p2{
+  color: #ff0000;
+}
+
+
+button>img{
+  width: 20px;
+}
+button{
+  display: flex ;
+  visibility: hidden ;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  padding: 10px 20px; 
+  border-style: none;
+  border-radius: 10px;
+}
